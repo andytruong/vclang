@@ -1,0 +1,23 @@
+{
+    "name": "andytruong/vclang",
+    "description": "Just an other dictionary application.",
+    "authors": [
+        {
+            "name": "Andy Truong",
+            "email": "thehongtt@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+        , "illuminate/database": "4.3.x-dev"
+        , "illuminate/container": "4.3.x-dev"
+        , "illuminate/events": "4.3.x-dev"
+        , "illuminate/support": "4.3.x-dev"
+        , "nesbot/carbon": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AndyTruong\\VCLang\\": "src"
+        }
+    }
+}
