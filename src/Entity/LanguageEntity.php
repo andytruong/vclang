@@ -2,7 +2,9 @@
 
 namespace AndyTruong\VCLang\Entity;
 
-class LanguageEntity
+use Model;
+
+class LanguageEntity extends Model
 {
 
     /**
@@ -30,8 +32,9 @@ class LanguageEntity
     protected $name;
 
     /**
+     * Writing direction.
      *
-     * @var type
+     * @var int
      */
     public $direction = self::DIRECTION_LTR;
 

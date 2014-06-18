@@ -2,7 +2,9 @@
 
 namespace AndyTruong\VCLang\Entity;
 
-class LanguageAwareEntity
+use Model;
+
+class LanguageAwareEntity extends Model
 {
 
     /**
@@ -14,7 +16,7 @@ class LanguageAwareEntity
 
     /**
      * Destination language.
-     * 
+     *
      * @var LanguageEntity
      */
     protected $dest_language;

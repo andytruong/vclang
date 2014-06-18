@@ -27,7 +27,7 @@ class WordEntity extends WordBaseEntity
     /**
      * Synonyms.
      *
-     * @var TermEntity[]
+     * @var WordEntity[]
      */
     protected $synonyms;
 

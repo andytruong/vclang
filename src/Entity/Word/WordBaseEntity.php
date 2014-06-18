@@ -2,6 +2,9 @@
 
 namespace AndyTruong\VCLang\Entity\Word;
 
+use AndyTruong\VCLang\Entity\DictionaryEntity;
+use AndyTruong\VCLang\Entity\PronunciationEntity;
+
 /**
  * Basic word, no specials properties.
  */
