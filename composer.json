@@ -1,6 +1,7 @@
 {
     "name": "andytruong/vclang",
     "description": "Just an other dictionary application.",
+    "license": "MIT",
     "authors": [
         {
             "name": "Andy Truong",
