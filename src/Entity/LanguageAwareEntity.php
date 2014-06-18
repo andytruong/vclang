@@ -2,9 +2,7 @@
 
 namespace AndyTruong\VCLang\Entity;
 
-use Model;
-
-abstract class LanguageAwareEntity extends Model
+abstract class LanguageAwareEntity
 {
 
     /**

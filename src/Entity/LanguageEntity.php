@@ -2,9 +2,7 @@
 
 namespace AndyTruong\VCLang\Entity;
 
-use Model;
-
-class LanguageEntity extends Model
+class LanguageEntity
 {
 
     /**

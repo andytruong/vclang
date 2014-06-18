@@ -1,7 +1,13 @@
 <?php
 
-$locations[] = __DIR__ . "/../vendor/autoload.php";
-$locations[] = __DIR__ . "/../../../autoload.php";
+use Doctrine\ORM\Tools\Setup;
+use Doctrine\ORM\EntityManager;
+
+// ---------------------
+// Class autoloading
+// ---------------------
+$locations[] = __DIR__ . '/../vendor/autoload.php';
+$locations[] = __DIR__ . '/../../../autoload.php';
 
 foreach ($locations as $location) {
     if (is_file($location)) {
@@ -10,3 +16,20 @@ foreach ($locations as $location) {
         break;
     }
 }
+
+// ---------------------
+// Doctrine ORM configuration
+// ---------------------
+$paths[] = dirname(__DIR__) . '/resources/config/entity';
+$isDevMode = false;
+
+// the connection configuration
+$dbParams = array(
+    'driver'   => 'pdo_mysql',
+    'user'     => 'root',
+    'password' => '',
+    'dbname'   => 'foo',
+);
+
+$config = Setup::createXMLMetadataConfiguration($paths, $isDevMode);
+return EntityManager::create($dbParams, $config);

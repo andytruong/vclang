@@ -2,9 +2,7 @@
 
 namespace AndyTruong\VCLang\Entity\Word;
 
-use Model;
-
-class PronunciationEntity extends Model
+class PronunciationEntity
 {
 
     /**
