@@ -1,6 +1,6 @@
 <?php
 
-namespace AndyTruong\VCLang\Entity;
+namespace AndyTruong\VCLang\Entity\Word;
 
 use Model;
 

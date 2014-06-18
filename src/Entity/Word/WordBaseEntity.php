@@ -3,7 +3,7 @@
 namespace AndyTruong\VCLang\Entity\Word;
 
 use AndyTruong\VCLang\Entity\DictionaryEntity;
-use AndyTruong\VCLang\Entity\PronunciationEntity;
+use AndyTruong\VCLang\Entity\Word\PronunciationEntity;
 
 /**
  * Basic word, no specials properties.
